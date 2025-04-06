@@ -63,7 +63,7 @@ function App() {
               <Route path='/circular' element={<Circularpage />} />
               <Route path='/uploads' element={<DataUpload userId={user._id} />} />
               <Route path='/events' element={<Events UserId={user._id}/>} />
-              <Route path='/semester' element={<SemesterDetails />} />
+              <Route path='/semester' element={<SemesterDetails user={user}/>} />
 
             </>
           }

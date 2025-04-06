@@ -25,7 +25,7 @@ export const addNewSubject = async (data) => {
 // Delete a subject from a semester
 export const deleteSubject = async (data) => {
     try {
-        const res = await api.delete('/semester/semester/subject/remove', { data });
+        const res = await api.post('/semester/semester/subject/remove', data );
         return res.data;
     } catch (err) {
         console.error("Error deleting subject:", err);

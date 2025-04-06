@@ -124,7 +124,7 @@ function Container({ title, children }) {
 
 function Detail({ label, value }) {
     return (
-        <p className="flex justify-between border-b py-2"><span className="font-medium">{label}:</span> {value}</p>
+        <p className="flex justify-between border-b px-2 py-2"><span className="font-medium">{label}:</span> {value}</p>
     );
 }
 
